@@ -147,13 +147,6 @@
     <!-- SYSTEM -->
     <header android:title="@string/header_category_system" />
 
-    <!-- Gummy Settings -->
-    <header
-        android:id="@+id/gummy_settings"
-        android:icon="@drawable/ic_settings_performance"
-        android:title="@string/gummy_settings_title"
-        android:fragment="com.android.settings.GummySettingsNLED" />
-
     <!-- Dock -->
     <header
         android:id="@+id/dock_settings"

@@ -29,7 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.flash_off=0 \
     dalvik.vm.lockprof.threshold=500 \
     ro.goo.developerid=TeamSourcery \
-    ro.goo.rom=Gummy-TORO 
+    ro.goo.rom=Sourcery-TORO 
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \

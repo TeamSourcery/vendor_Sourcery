@@ -53,7 +53,17 @@ PRODUCT_COPY_FILES += \
 
 	# Propiortary applications
 PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk
+    vendor/Sourcery/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
+    vendor/Sourcery/prebuilt/common/app/EmailGoogle.apk:system/app/EmailGoogle.apk \
+    vendor/Sourcery/prebuilt/common/app/ExchangeGoogle.apk:system/app/ExchangeGoogle.apk \
+    vendor/Sourcery/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
+    vendor/Sourcery/prebuilt/common/app/RootBrowser.apk:system/app/RootBrowser.apk \
+    vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk
+# libs
+PRODUCT_COPY_FILES += \
+    vendor/Sourcery/prebuilt/common/lib/libmotricity.so:system/lib/libmotricity.so \
+    vendor/Sourcery/prebuilt/common/lib/libpicowrapper.so:system/lib/libpicowrapper.so \
+    vendor/Sourcery/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
 # Google DNS servers and host file
 PRODUCT_COPY_FILES += \
@@ -131,6 +141,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180 \
+    ro.config.ringtone=Girtab.ogg \
+    ro.config.notification_sound=EagleSourcery.mp3 \
+    ro.config.alarm_alert=Cesium.ogg \
+    ro.build.sourcery.version=3.0 \
+    ro.com.android.dataroaming=false \
 	ro.goo.version=100
 
 

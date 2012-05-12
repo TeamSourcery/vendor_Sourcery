@@ -14,7 +14,8 @@ PRODUCT_PACKAGES := \
     AppWidgetPicker \
     Superuser \
     Superuser.apk \
-    su
+    su \
+    ICSControl
 
 
 # Wallpapers
@@ -26,7 +27,8 @@ PRODUCT_PACKAGES += \
     HoloSpiralWallpaper \
     NoiseField \
     MagicSmokeWallpapers \
-    Galaxy4 
+    Galaxy4 \
+    ICSourceryWallpapers
 
 #CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
 PRODUCT_PACKAGES += \

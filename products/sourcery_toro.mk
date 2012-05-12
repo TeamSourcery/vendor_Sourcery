@@ -8,12 +8,13 @@ PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
+#Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_ID=IMM76K \
     PRODUCT_NAME=mysid \
-    BUILD_ID=IMM76D \
-    BUILD_DISPLAY_ID=Sourcery-TORO \
-    BUILD_FINGERPRINT="google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys" \
-    PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys"
+    BUILD_DISPLAY_ID=ICSourcery-V3.0Alpha2 \
+    PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys" \
+    BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \

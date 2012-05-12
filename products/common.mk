@@ -4,7 +4,7 @@ PRODUCT_DEVICE := generic
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=DeVorteX
+    ro.rommanager.developerid=icsourcery
 
 # stadard sourcery packages 
 PRODUCT_PACKAGES := \
@@ -144,7 +144,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Girtab.ogg \
     ro.config.notification_sound=EagleSourcery.mp3 \
     ro.config.alarm_alert=Cesium.ogg \
-    ro.build.sourcery.version=3.0 \
+    ro.build.sourcery.version=3.0Alpha \
     ro.com.android.dataroaming=false \
 	ro.goo.version=100
 

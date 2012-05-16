@@ -61,6 +61,12 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/Sourcery/prebuilt/common/app/RootBrowser.apk:system/app/RootBrowser.apk \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk
+
+# Sounds
+PRODUCT_COPY_FILES += \
+    vendor/sourcery/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \
+    vendor/sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg
+
 # libs
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/lib/libmotricity.so:system/lib/libmotricity.so \
@@ -147,9 +153,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180 \
-    ro.config.ringtone=Girtab.ogg \
-    ro.config.notification_sound=EagleSourcery.mp3 \
-    ro.config.alarm_alert=Cesium.ogg \
+    ro.config.ringtone=LoveFlute.ogg \
+    ro.config.notification_sound=Sourcery.ogg \
+    ro.config.alarm_alert=Plutonium.ogg \
     ro.build.sourcery.version=3.0Alpha \
     ro.com.android.dataroaming=false \
 	ro.goo.version=100

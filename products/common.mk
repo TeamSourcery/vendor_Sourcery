@@ -64,8 +64,8 @@ PRODUCT_COPY_FILES += \
 
 # Sounds
 PRODUCT_COPY_FILES += \
-    vendor/sourcery/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \
-    vendor/sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg
+    vendor/Sourcery/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \
+    vendor/Sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg
 
 # libs
 PRODUCT_COPY_FILES += \

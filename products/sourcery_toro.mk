@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.flash_off=0 \
     dalvik.vm.lockprof.threshold=500 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=ICSourcery Version 3.0
+    ro.modversion=ICSourcery-Version-3.0
     ro.goo.rom=Sourcery-TORO 
 
 PRODUCT_COPY_FILES += \

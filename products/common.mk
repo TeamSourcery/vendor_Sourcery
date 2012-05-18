@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
     vendor/Sourcery/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
     vendor/Sourcery/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
+    vendor/Sourcery/prebuilt/common/etc/.root_browser:system/etc/.root_browser \
     vendor/Sourcery/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Sourcery/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/Sourcery/prebuilt/common/bin/sysinit:system/bin/sysinit \
@@ -156,7 +157,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=LoveFlute.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=3.0Alpha \
+    ro.build.sourcery.version=3.0 \
     ro.com.android.dataroaming=false \
 	ro.goo.version=100
 

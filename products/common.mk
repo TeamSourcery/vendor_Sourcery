@@ -15,6 +15,8 @@ PRODUCT_PACKAGES := \
     Superuser \
     Superuser.apk \
     su \
+    Development \
+    SpareParts \
     ICSControl
 
 

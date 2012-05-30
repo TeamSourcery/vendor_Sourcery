@@ -59,11 +59,10 @@ PRODUCT_COPY_FILES += \
 	# Propiortary applications
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
-    vendor/Sourcery/prebuilt/common/app/EmailGoogle.apk:system/app/EmailGoogle.apk \
-    vendor/Sourcery/prebuilt/common/app/ExchangeGoogle.apk:system/app/ExchangeGoogle.apk \
     vendor/Sourcery/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/Sourcery/prebuilt/common/app/RootBrowser.apk:system/app/RootBrowser.apk \
-    vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk
+    vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
+    vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk
 
 # Sounds
 PRODUCT_COPY_FILES += \

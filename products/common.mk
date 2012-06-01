@@ -6,7 +6,7 @@ PRODUCT_DEVICE := generic
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=icsourcery
 
-# stadard sourcery packages 
+# standard sourcery packages 
 PRODUCT_PACKAGES := \
     Camera \
     Gallery \
@@ -18,6 +18,13 @@ PRODUCT_PACKAGES := \
     Development \
     SpareParts \
     ICSControl
+
+# tmobile	 	
+PRODUCT_PACKAGES += \
+    ThemeManager \
+    ThemeChooser \
+    com.tmobile.themes
+ 	 	
 
 
 # Wallpapers
@@ -55,8 +62,9 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Sourcery/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/Sourcery/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/Sourcery/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
-	# Propiortary applications
+# Propiortary applications
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
     vendor/Sourcery/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
@@ -75,8 +83,9 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/lib/libpicowrapper.so:system/lib/libpicowrapper.so \
     vendor/Sourcery/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
-# Google DNS servers and host file
+# Google DNS servers and host and gps file
 PRODUCT_COPY_FILES += \
+    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \
     vendor/Sourcery/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/Sourcery/prebuilt/common/etc/hosts:system/etc/hosts
 
@@ -98,9 +107,8 @@ PRODUCT_COPY_FILES += \
 
 # Term binarry for support for market updates
 PRODUCT_COPY_FILES +=  \
-    vendor/Sourcery/proprietary/Term.apk:system/app/Term.apk \
     vendor/Sourcery/proprietary/lib/armeabi/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so 
-
+#vendor/Sourcery/proprietary/Term.apk:system/app/Term.apk \
 # Term info for nano support
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/terminfo/l/linux:system/etc/terminfo/l/linux \

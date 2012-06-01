@@ -12,7 +12,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_ID=IMM76K \
     PRODUCT_NAME=mysid \
-    BUILD_DISPLAY_ID=ICSourcery-V3.0-Beta2 \
+    BUILD_DISPLAY_ID=ICSourcery-V3.0-Beta-3 \
     PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys" \
     BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys"
 

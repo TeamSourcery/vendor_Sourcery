@@ -12,7 +12,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_ID=IMM76K \
     PRODUCT_NAME=mysid \
-    BUILD_DISPLAY_ID=ICSourcery-V3.0-PreviewRelease-5 \
+    BUILD_DISPLAY_ID=IMM76K \
     PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys" \
     BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys"
 
@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     camera.flash_off=0 \
     dalvik.vm.lockprof.threshold=500 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=ICSourcery-Version-3.0
+    ro.modversion=ICSourcery-Version-3.0PreviewReleaes
     ro.goo.rom=Sourcery-TORO 
 
 PRODUCT_COPY_FILES += \

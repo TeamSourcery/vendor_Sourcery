@@ -166,7 +166,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=LoveFlute.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=3.0 \
+    ro.build.sourcery.version=3.2 \
     ro.com.android.dataroaming=false \
 	ro.goo.version=100
 

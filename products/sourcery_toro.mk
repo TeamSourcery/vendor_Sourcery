@@ -29,8 +29,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     camera.flash_off=0 \
     dalvik.vm.lockprof.threshold=500 \
+    wifi.supplicant_scan_interval=90 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=ICSourcery-Version-3.3-Final
+    ro.modversion=ICSourcery-Version-3.4.2-Final
     ro.goo.rom=Sourcery-TORO
 
 PRODUCT_COPY_FILES += \

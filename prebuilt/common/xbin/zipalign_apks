@@ -1,0 +1,59 @@
+#!/system/bin/sh
+#
+#===========
+# Variables: 
+#===========
+
+BB=busybox
+
+#===========
+# Functions:
+#===========
+
+zipalign()
+{
+                    $BB echo "Zipaligning all .apk files in /system/app"
+                    for apk in /system/app/*.apk ; do
+                      /system/xbin/zipalign -c 4 $apk > /dev/null 2>&1
+                      if [ $? == 1 ];
+                        then
+                          $BB echo "ZipAligning $($BB basename $apk)"
+                          /system/xbin/zipalign -f 4 $apk /cache/$($BB basename $apk) > /dev/null 2>&1
+                          if [ -e /cache/$($BB basename $apk) ];
+                            then
+                              $BB cp -fp /cache/$($BB basename $apk) $apk; > /dev/null 2>&1
+                              $BB rm /cache/$($BB basename $apk); > /dev/null 2>&1
+                              $BB echo "ZipAligning $($BB basename $apk) complete."
+                            else
+                              $BB echo "ZipAligning $($BB basename $apk) failed."
+                          fi;
+                        else
+                          $BB echo "ZipAlign already completed on $apk"
+                      fi;
+                    done;
+                     $BB echo "Zipaligning all .apk files in /data/app"
+                    for apk in /data/app/*.apk ; do
+                      /system/xbin/zipalign -c 4 $apk > /dev/null 2>&1
+                      if [ $? == 1 ];
+                        then
+                          $BB echo "ZipAligning $($BB basename $apk)"
+                          /system/xbin/zipalign -f 4 $apk /cache/$($BB basename $apk) > /dev/null 2>&1
+                          if [ -e /cache/$($BB basename $apk) ];
+                            then
+                              $BB cp -fp /cache/$($BB basename $apk) $apk > /dev/null 2>&1
+                              $BB rm /cache/$($BB basename $apk) > /dev/null 2>&1
+                              $BB echo "ZipAligning $($BB basename $apk) complete."
+                            else
+                              $BB echo "ZipAligning $($BB basename $apk) failed."
+                          fi;
+                        else
+                          $BB echo "ZipAlign already completed on $apk"
+                      fi;
+                    done;
+		echo -n "finished zip aligning apps" >> /sdcard/toolsFinisHed
+}
+
+#=============
+# Main Script:
+#=============
+zipalign

@@ -17,7 +17,8 @@ PRODUCT_PACKAGES := \
     su \
     Development \
     SpareParts \
-    ICSControl
+    ICSControl \
+    MusicFX
 
 # tmobile	 	
 PRODUCT_PACKAGES += \
@@ -143,8 +144,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/xbin/sysro:system/xbin/sysro \
     vendor/Sourcery/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
     vendor/Sourcery/prebuilt/common/xbin/zip:system/xbin/zip \
-    vendor/Sourcery/prebuilt/common/xbin/zipalign:system/xbin/zipalign 
-
+    vendor/Sourcery/prebuilt/common/xbin/zipalign:system/xbin/zipalign \
+    vendor/Sourcery/prebuilt/common/xbin/zipalign_apks:system/xbin/zipalign_apks
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -166,7 +167,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=LoveFlute.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=3.3 \
+    ro.build.sourcery.version=3.4.2 \
     ro.com.android.dataroaming=false \
 	ro.goo.version=100
 

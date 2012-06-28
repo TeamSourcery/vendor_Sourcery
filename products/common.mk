@@ -131,7 +131,6 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/xbin/backup:system/xbin/backup \
     vendor/Sourcery/prebuilt/common/xbin/bash:system/xbin/bash \
     vendor/Sourcery/prebuilt/common/xbin/btool:system/xbin/btool \
-    vendor/Sourcery/prebuilt/common/xbin/busybox:system/xbin/busybox \
     vendor/Sourcery/prebuilt/common/xbin/drm1_func_test:system/xbin/drm1_func_test \
     vendor/Sourcery/prebuilt/common/xbin/gdb:system/xbin/gdb \
     vendor/Sourcery/prebuilt/common/xbin/gdbserver:system/xbin/gdbserver \

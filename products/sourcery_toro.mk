@@ -12,8 +12,8 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_ID=IMM76K \
     PRODUCT_NAME=mysid \
-    BUILD_DISPLAY_ID=IMM76K-4.0.4-r2.1\
-    PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys" \
+    BUILD_DISPLAY_ID=IMM76K-4.1.1-r1\
+    PRIVATE_BUILD_DESC="mysid-user 4.1.1 IMM76K 336647 release-keys" \
     BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -29,9 +29,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true \
     camera.flash_off=0 \
     dalvik.vm.lockprof.threshold=500 \
-    wifi.supplicant_scan_interval=90 \
+    wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=ICSourcery-Version-3.4.2-Final
+    ro.modversion=ICSourcery-Version-4.1-Alpha
     ro.goo.rom=Sourcery-TORO
 
 PRODUCT_COPY_FILES += \

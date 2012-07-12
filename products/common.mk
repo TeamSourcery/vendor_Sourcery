@@ -13,20 +13,10 @@ PRODUCT_PACKAGES := \
     SoundRecorder \
     AppWidgetPicker \
     Superuser \
-    Superuser.apk \
     su \
     Development \
     SpareParts \
-    ICSControl \
     MusicFX
-
-# tmobile	 	
-PRODUCT_PACKAGES += \
-    ThemeManager \
-    ThemeChooser \
-    com.tmobile.themes
- 	 	
-
 
 # Wallpapers
 PRODUCT_PACKAGES += \
@@ -166,7 +156,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=LoveFlute.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=3.4.2 \
+    ro.build.sourcery.version=4.1 \
     ro.com.android.dataroaming=false \
 	ro.goo.version=100
 

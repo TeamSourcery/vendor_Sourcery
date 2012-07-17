@@ -10,11 +10,11 @@ PRODUCT_MANUFACTURER := samsung
 
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_ID=IMM76K \
+    BUILD_ID=JRO03C \
     PRODUCT_NAME=mysid \
-    BUILD_DISPLAY_ID=IMM76K-4.1.1-r1\
-    PRIVATE_BUILD_DESC="mysid-user 4.1.1 IMM76K 336647 release-keys" \
-    BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys"
+    BUILD_DISPLAY_ID=JRO03C-4.1.1-r1\
+    PRIVATE_BUILD_DESC="mysid-user 4.1.1 JRO03C 336647 release-keys" \
+    BUILD_FINGERPRINT="google/mysid/toro:4.1.1/JRO03C/336647:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \
@@ -31,7 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=ICSourcery-Version-4.1-Alpha
+    ro.modversion=ICSourcery-Version-4.1-Alpha-3
     ro.goo.rom=Sourcery-TORO
 
 PRODUCT_COPY_FILES += \

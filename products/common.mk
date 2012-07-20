@@ -16,6 +16,7 @@ PRODUCT_PACKAGES := \
     su \
     Development \
     SpareParts \
+    ICSControl \
     MusicFX
 
 # Wallpapers

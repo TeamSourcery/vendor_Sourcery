@@ -12,8 +12,6 @@ PRODUCT_PACKAGES := \
     Gallery \
     SoundRecorder \
     AppWidgetPicker \
-    Superuser \
-    su \
     Development \
     SpareParts \
     ICSControl \
@@ -62,7 +60,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/Sourcery/prebuilt/common/app/MiFileExplorer_v2.3.7.32.apk:system/app/MiFileExplorer_v2.3.7.32.apk \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
-    vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk
+    vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
+    vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
 
 # Sounds
 PRODUCT_COPY_FILES += \
@@ -135,7 +134,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
     vendor/Sourcery/prebuilt/common/xbin/zip:system/xbin/zip \
     vendor/Sourcery/prebuilt/common/xbin/zipalign:system/xbin/zipalign \
-    vendor/Sourcery/prebuilt/common/xbin/zipalign_apks:system/xbin/zipalign_apks
+    vendor/Sourcery/prebuilt/common/xbin/zipalign_apks:system/xbin/zipalign_apks \
+    vendor/Sourcery/prebuilt/common/xbin/su:system/xbin/su
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

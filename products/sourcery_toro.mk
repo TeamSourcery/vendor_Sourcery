@@ -31,7 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=ICSourcery-Version-4.1-Alpha-3
+    ro.modversion=JBSourcery-Version-1.0-Alpha-7
     ro.goo.rom=Sourcery-TORO
 
 PRODUCT_COPY_FILES += \

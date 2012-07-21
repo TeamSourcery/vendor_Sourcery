@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/ApexLauncher.apk:system/app/ApexLauncher.apk \
     vendor/Sourcery/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
-    vendor/Sourcery/prebuilt/common/app/MiFileExplorer_v2.3.7.32.apk:system/app/MiFileExplorer_v2.3.7.32.apk \
+    vendor/Sourcery/prebuilt/common/app/MiFileExplorer_v3.0.4.apk:system/app/MiFileExplorer_v3.0.4.apk \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk

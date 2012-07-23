@@ -34,6 +34,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=JBSourcery-Version-1.0-AlphaRC1
     ro.goo.rom=Sourcery-TORO
 
+# hardware info
+ro.device.cpu=1.2GHz dual-core TI OMAP 4460
+ro.device.gpu=PowerVR SGX SGX540
+ro.device.rear_cam=5 MP
+ro.device.front_cam=1.3 MP
+ro.device.screen_res=720x1280
+
+
 PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
     vendor/samsung/toro/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \

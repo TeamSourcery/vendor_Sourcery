@@ -12,9 +12,9 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_ID=JRO03C \
     PRODUCT_NAME=mysid \
-    BUILD_DISPLAY_ID=JRO03C-4.1.1-r1\
-    PRIVATE_BUILD_DESC="mysid-user 4.1.1 JRO03C 336647 release-keys" \
-    BUILD_FINGERPRINT="google/mysid/toro:4.1.1/JRO03C/336647:user/release-keys"
+    BUILD_DISPLAY_ID=JRO03C-4.1.1-r1 \
+    PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys" \
+    BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \

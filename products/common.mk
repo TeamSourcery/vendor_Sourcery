@@ -63,11 +63,11 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
 
-# Sounds
+# Sounds and bootani
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \
     vendor/Sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg
-
+    vendor/Sourcery/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip
 # libs
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/lib/libmotricity.so:system/lib/libmotricity.so \
@@ -115,7 +115,7 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
     vendor/Sourcery/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
     vendor/Sourcery/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
-
+    
 # Added xbin files
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/xbin/backup:system/xbin/backup \

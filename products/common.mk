@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     NoiseField \
     MagicSmokeWallpapers \
     Galaxy4 \
-    ICSourceryWallpapers
+    JBSourceryWallpapers
 
 #CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
 PRODUCT_PACKAGES += \

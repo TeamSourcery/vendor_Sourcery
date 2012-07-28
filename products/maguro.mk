@@ -6,6 +6,8 @@ $(call inherit-product, vendor/Sourcery/products/common_phone.mk)
 $(call inherit-product, vendor/Sourcery/products/common.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/Sourcery/products/gsm.mk)
+# tmobile theme engine
+$(call inherit-product, vendor/Sourcery/products/theme.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/maguro
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common
@@ -38,7 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-Version-1.0-PublicBeta \
+    ro.modversion=JBSourcery-Version-1.0-PublicBeta2 \
     ro.goo.rom=Sourcery-Maguro
 
 

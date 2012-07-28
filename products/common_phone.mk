@@ -1,9 +1,7 @@
 # Default ringtone
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Ring_Syth_04.ogg \
-    ro.config.notification_sound=Sourcery.ogg \
-    ro.config.alarm_alert=Cesium.ogg \
 
 PRODUCT_PACKAGES += \
   Stk
 
+# Inherit drm blobs
+-include vendor/Sourcery/products/common_drm_phone.mk

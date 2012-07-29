@@ -52,8 +52,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/.root_browser:system/etc/.root_browser \
     vendor/Sourcery/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Sourcery/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/Sourcery/prebuilt/common/bin/sysinit:system/bin/sysinit 
-    
+    vendor/Sourcery/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf
 
 # Propiortary applications
 PRODUCT_COPY_FILES += \

@@ -28,13 +28,15 @@ PRODUCT_PACKAGES += \
     MagicSmokeWallpapers \
     Galaxy4 \
     JBSourceryWallpapers \
-    librs_jni
+    librs_jni \
+    Thinkfree
 
 #CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
-    audio_effects.conf 
+    audio_effects.conf \
+    Apollo
 
 # init.d support
 PRODUCT_COPY_FILES += \

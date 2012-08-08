@@ -71,6 +71,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3 \
     vendor/Sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg \
+    vendor/Sourcery/prebuilt/common/media/audio/ringtones/freebird.ogg:system/media/audio/ringtones/freebird.ogg \
     vendor/Sourcery/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip
 # libs
 PRODUCT_COPY_FILES += \
@@ -157,7 +158,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \
     wifi.supplicant_scan_interval=180 \
-    ro.config.ringtone=LoveFlute.ogg \
+    ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
     ro.build.sourcery.version=1.0 \

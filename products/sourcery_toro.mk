@@ -7,15 +7,18 @@ PRODUCT_NAME := Sourcery_toro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
-PRODUCT_MANUFACTURER := samsung
+PRODUCT_MANUFACTURER := Samsung
 
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_ID=JRO03C \
+    BUILD_NUMBER=235179 \
+    BUILD_ID=ICL53F \
     PRODUCT_NAME=mysid \
-    BUILD_DISPLAY_ID=JRO03C-4.1.1-r1 \
-    PRIVATE_BUILD_DESC="mysid-user 4.0.4 IMM76K 336647 release-keys" \
-    BUILD_FINGERPRINT="google/mysid/toro:4.0.4/IMM76K/336647:user/release-keys"
+    BUILD_DISPLAY_ID=JRO03L-4.1.1-r4 \
+    BUILD_VERSION_TAGS=release-keys \
+    USER=android-build \
+    PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys" \
+    BUILD_FINGERPRINT="google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \
@@ -32,7 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-Version-1.0-PublicBeta-5 \
+    ro.modversion=JBSourcery-Version-1.0 \
     ro.goo.rom=Sourcery-TORO
 
 

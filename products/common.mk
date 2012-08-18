@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/MiFileExplorer_v3.0.4.apk:system/app/MiFileExplorer_v3.0.4.apk \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
-    vendor/Sourcery/prebuilt/common/app/thinkdroid.apk:system/app/thinkdroid.apk \
+    vendor/Sourcery/prebuilt/common/app/Thinkfree.apk:system/app/Thinkfree.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
 
 # Sounds and bootani

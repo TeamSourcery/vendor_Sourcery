@@ -164,7 +164,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.alarm_alert=Plutonium.ogg \
     ro.build.sourcery.version=2.0 \
     ro.com.android.dataroaming=false \
-	ro.goo.version=100
+	ro.goo.version=200
 
 
 # tools

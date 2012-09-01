@@ -66,7 +66,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk
+    vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/Sourcery/prebuilt/common/app/Torch.apk:system/app/Torch.apk
 
 # Sounds and bootani
 PRODUCT_COPY_FILES += \
@@ -162,9 +163,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=2.1 \
+    ro.build.sourcery.version=2.2 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=300 \
+    ro.goo.version=220 \
     ro.goo.rom=JBSourcery
 
 

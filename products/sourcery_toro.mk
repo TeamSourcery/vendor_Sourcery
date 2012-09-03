@@ -17,8 +17,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_DISPLAY_ID=JRO03L-4.1.1-r4 \
     BUILD_VERSION_TAGS=release-keys \
     USER=android-build \
-    PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys" \
-    BUILD_FINGERPRINT="google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys"
+    PRIVATE_BUILD_DESC="mysid-user 4.1.1 JRO03O 424425 release-keys" \
+    BUILD_FINGERPRINT="google/mysid/toro:4.1.1/JRO03O/424425:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \
@@ -44,8 +44,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
     vendor/samsung/toro/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
     vendor/samsung/toro/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
-    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \
-
+    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf 
+    
+    
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/toro
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common
 

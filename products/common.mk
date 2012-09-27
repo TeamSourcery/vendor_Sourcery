@@ -161,19 +161,38 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=2.3 \
+    ro.build.sourcery.version=2.3.5 \
     ro.com.android.dataroaming=false \
     ro.goo.version=230 \
     ro.goo.rom=JBSourcery
 
 
 # tools
- 	 
 PRODUCT_PACKAGES += \
+    openvpn \
     e2fsck \
     mke2fs \
-    tune2fs
+    tune2fs \
+    bash \
+    vim \
+    nano \
+    htop \
+    powertop \
+    lsof
 
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ss
+
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
 
 
 

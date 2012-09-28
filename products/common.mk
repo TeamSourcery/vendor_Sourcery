@@ -66,7 +66,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/Sourcery/prebuilt/common/app/Torch.apk:system/app/Torch.apk
+    vendor/Sourcery/prebuilt/common/app/Torch.apk:system/app/Torch.apk \
+    vendor/Sourcery/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
 
 # Sounds and bootani
 PRODUCT_COPY_FILES += \

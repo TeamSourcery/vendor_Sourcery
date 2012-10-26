@@ -29,7 +29,7 @@ PRODUCT_PACKAGES += \
     Galaxy4 \
     JBSourceryWallpapers \
     librs_jni \
-    Thinkfree
+    Torch
 
 #CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
 PRODUCT_PACKAGES += \

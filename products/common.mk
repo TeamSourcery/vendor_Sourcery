@@ -66,7 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/Sourcery/prebuilt/common/app/Torch.apk:system/app/Torch.apk \
     vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk
 
 # Sounds and bootani

@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     NoiseField \
     MagicSmokeWallpapers \
     Galaxy4 \
-    JBSourceryWallpapers \
+    SourceryWallPapers \
     librs_jni \
     Torch
 

@@ -15,7 +15,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_NUMBER=235179 \
     BUILD_ID=ICL53F \
     PRODUCT_NAME=mysid \
-    BUILD_DISPLAY_ID=JZO54K-4.1.2 \
+    BUILD_DISPLAY_ID=JOP40C-4.2 \
     BUILD_VERSION_TAGS=release-keys \
     USER=android-build \
     PRIVATE_BUILD_DESC="mysid-user 4.1.1 JRO03O 424425 release-keys" \
@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-V3.2
+    ro.modversion=JBSourcery-V4.0(test)
 
 
 

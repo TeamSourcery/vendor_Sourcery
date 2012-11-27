@@ -40,11 +40,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-V3.2
+    ro.modversion=JBSourcery-V4.0(test)
 
-
-
-
-# Maguro specific packages
-PRODUCT_PACKAGES += \
-       Thinkfree

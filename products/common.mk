@@ -13,6 +13,7 @@ PRODUCT_PACKAGES := \
     SoundRecorder \
     AppWidgetPicker \
     Development \
+    LatinImeGoogle \
     SpareParts \
     MusicFX
 
@@ -39,6 +40,7 @@ PRODUCT_PACKAGES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
+    vendor/Sourcery/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/Sourcery/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
     vendor/Sourcery/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
     vendor/Sourcery/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \

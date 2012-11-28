@@ -7,7 +7,7 @@ $(call inherit-product, vendor/Sourcery/products/common.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/Sourcery/products/gsm.mk)
 # tmobile theme engine
-$(call inherit-product, vendor/Sourcery/products/theme.mk)
+#$(call inherit-product, vendor/Sourcery/products/theme.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/maguro
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common

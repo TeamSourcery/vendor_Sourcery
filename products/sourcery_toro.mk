@@ -1,7 +1,7 @@
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 $(call inherit-product, vendor/Sourcery/products/common.mk)
 $(call inherit-product, vendor/Sourcery/products/common_phone.mk)
-$(call inherit-product, vendor/Sourcery/products/theme.mk)
+#$(call inherit-product, vendor/Sourcery/products/theme.mk)
 $(call inherit-product, vendor/Sourcery/products/vzw.mk)
 
 PRODUCT_NAME := Sourcery_toro

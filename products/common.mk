@@ -14,7 +14,6 @@ PRODUCT_PACKAGES := \
     AppWidgetPicker \
     Development \
     SpareParts \
-    MagicControl \
     MusicFX
 
 # Wallpapers
@@ -28,8 +27,8 @@ PRODUCT_PACKAGES += \
     MagicSmokeWallpapers \
     Galaxy4 \
     SourceryWallPapers \
-    librs_jni \
-    Torch
+    librs_jni 
+   
 
 #CM apps - Thanks to the great team over at CyanogenMod we have these awesome apps :)
 PRODUCT_PACKAGES += \

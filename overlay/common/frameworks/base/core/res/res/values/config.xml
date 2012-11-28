@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-     <!-- Set default for disabling menu key. Option to
-          disable does not work unless this is true. -->
-     <bool name="config_disableMenuKeyInLockScreen">true</bool>
 
-    <!-- Location services -->
-    <string name="config_networkLocationProviderPackageName">com.google.android.location</string>
-    <string name="config_geocodeProviderPackageName">com.google.android.location</string>
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+
+    <!-- Enabled Google Network Location Services with fusedlocation -->
+    <string-array name="config_locationProviderPackageNames" translatable="false">
+         <!--AOSP fused location provider -->
+         <item>com.android.location.fused</item>
+         <!-- The Google Network Location Services location provider -->
+         <item>com.google.android.location</item>
+    </string-array>
 </resources>

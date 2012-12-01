@@ -15,7 +15,9 @@ PRODUCT_PACKAGES := \
     Development \
     LatinImeGoogle \
     SpareParts \
-    MusicFX
+    MagicControl \
+    MusicFX \
+    Torch
 
 # Wallpapers
 PRODUCT_PACKAGES += \

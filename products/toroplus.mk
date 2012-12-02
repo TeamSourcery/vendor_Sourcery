@@ -9,7 +9,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/toro
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_toroplus
+PRODUCT_NAME := Sourcery_toroplus
 PRODUCT_BRAND := Google
 PRODUCT_DEVICE := toroplus
 PRODUCT_MODEL := Galaxy Nexus
@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-V4.0(test)
+    ro.modversion=JBSourcery-V4.0(PreRelease)
 
 
 # Torospr specific packages

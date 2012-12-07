@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-V4.0(PreRelease)
+    ro.modversion=JBSourcery-V4.0(PreRelease-3)
 
 
 
@@ -45,7 +45,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
     vendor/samsung/toro/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
     vendor/samsung/toro/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
-    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf 
+    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \
+    vendor/Sourcery/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml 
     
     
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/toro

@@ -34,6 +34,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=TeamSourcery \
     ro.modversion=JBSourcery-V4.0(PreRelease)
 
+PRODUCT_COPY_FILES += \
+    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \
+    vendor/Sourcery/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml 
+
 
 # Torospr specific packages
 PRODUCT_PACKAGES += \

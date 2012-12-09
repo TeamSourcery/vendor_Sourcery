@@ -4,7 +4,7 @@ PRODUCT_PACKAGES += \
   Stk
 
 # Inherit drm blobs
- include vendor/Sourcery/products/common_drm_phone.mk
+ #include vendor/Sourcery/products/common_drm_phone.mk
 
 # BT config
  PRODUCT_COPY_FILES += \

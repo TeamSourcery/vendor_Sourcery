@@ -17,7 +17,8 @@ PRODUCT_PACKAGES := \
     SpareParts \
     MagicControl \
     MusicFX \
-    Torch
+    Torch \
+    Stk
 
 # Wallpapers
 PRODUCT_PACKAGES += \
@@ -37,6 +38,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
+    LatinImeGoogle \
     audio_effects.conf \
     Apollo
 
@@ -99,7 +101,7 @@ PRODUCT_COPY_FILES += \
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/Sourcery/prebuilt/common/etc/init.local.rc:root/init.local.rc \
     vendor/Sourcery/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/Sourcery/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 

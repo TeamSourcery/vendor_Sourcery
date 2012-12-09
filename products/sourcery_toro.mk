@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
     vendor/samsung/toro/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
     vendor/samsung/toro/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
+    vendor/Sourcery/prebuilt/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
     vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \
     vendor/Sourcery/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml 
     

@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     PhaseBeam \
     HoloSpiralWallpaper \
+    MusicVisualization \
     NoiseField \
     MagicSmokeWallpapers \
     Galaxy4 \
@@ -87,6 +88,7 @@ PRODUCT_COPY_FILES += \
 # Google DNS servers and host 
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/Sourcery/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/Sourcery/prebuilt/common/etc/hosts:system/etc/hosts
 
 # Cron schedual 
@@ -159,6 +161,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
+    ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=240 \

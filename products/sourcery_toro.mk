@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toro/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
     vendor/Sourcery/prebuilt/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
     vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \
-    vendor/Sourcery/prebuilt/common/etc/apns-conf-cdma.xml:system/etc/apns-conf.xml 
+    vendor/Sourcery/prebuilt/tuna/vold.fstab:system/etc/vold.fstab 
     
     
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/toro

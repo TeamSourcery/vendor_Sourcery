@@ -9,3 +9,6 @@ PRODUCT_PACKAGES += \
 # BT config
  PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    fw.max_users=2

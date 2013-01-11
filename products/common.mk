@@ -19,7 +19,8 @@ PRODUCT_PACKAGES := \
     MusicFX \
     Torch \
     Stk \
-    LockClock
+    LockClock \
+    Email2
 
 # Wallpapers
 PRODUCT_PACKAGES += \

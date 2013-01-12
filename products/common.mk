@@ -2,6 +2,9 @@ PRODUCT_NAME := Sourcery
 PODUCT_BRAND := Sourcery
 PRODUCT_DEVICE := generic
 
+# Common dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/dictionaries
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=icsourcery
@@ -13,7 +16,6 @@ PRODUCT_PACKAGES := \
     SoundRecorder \
     AppWidgetPicker \
     Development \
-    LatinImeGoogle \
     SpareParts \
     MagicControl \
     MusicFX \
@@ -47,7 +49,6 @@ PRODUCT_PACKAGES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/Sourcery/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
     vendor/Sourcery/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
     vendor/Sourcery/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
@@ -74,9 +75,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk \
-    vendor/Sourcery/prebuilt/common/app/LatinImeGoogle.apk:system/app/LatinImeGoogle.apk \
-
+    vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk
+    
 # Sounds and bootani
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg \

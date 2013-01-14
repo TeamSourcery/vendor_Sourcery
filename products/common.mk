@@ -172,9 +172,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=4.3 \
+    ro.build.sourcery.version=4.4 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=430 \
+    ro.goo.version=440 \
     ro.goo.rom=JBSourcery
 
 

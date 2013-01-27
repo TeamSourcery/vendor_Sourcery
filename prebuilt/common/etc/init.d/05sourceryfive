@@ -1,0 +1,36 @@
+#!/system/bin/sh
+# PrimeDirective, Sonicxml, DHO, Nuclearmistake
+# With inspiration from DroidTh3ory
+
+sync
+sysrw
+
+# Enable Sysctl Tweaks
+sysctl -p /system/etc/sysctl.conf
+
+# Set SD Card Cache
+if [ -e /sys/devices/virtual/bdi/179:0/read_ahead_kb ]; then
+echo "2048" > /sys/devices/virtual/bdi/179:0/read_ahead_kb
+fi
+
+# File system Mounts (By DroidTh3ory?)
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /dev
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /proc
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /sys
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nodev,data=writeback,barrier=0 -t auto /system
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /data
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /data/data
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /cache
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /acct
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /dev/pts
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /dev/cpuctl
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /mnt/asec
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /mnt/obb
+busybox mount -o remount,noatime,nodiratime,discard,noauto_da_alloc,nosuid,nodev,data=writeback,barrier=0 -t auto /mnt/sdcard
+
+# Breaking the lease
+echo "15" > /proc/sys/fs/lease-break-time
+
+sync
+sysro

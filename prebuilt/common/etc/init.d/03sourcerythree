@@ -16,10 +16,33 @@
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  
  =====================================================================
-'
+' 
 
-. /system/etc/liberty.cfg
+# With scripts from PrimeDirective and Sonicxml's cron.jobs, and bawss sauce from Nuclearmistake
 
-if busybox [ $ENABLE_SYSCTL -eq 1 -a -f /system/etc/sysctl.conf ]; then
-	sysctl -p /system/etc/sysctl.conf
+# crond has "/bin/sh" hardcoded
+mount -o remount,rw rootfs /
+if busybox [ ! -L /bin ]; then
+	ln -s /system/bin/ /bin
 fi
+mount -o remount,ro rootfs /
+
+
+# rebuild crontab if it got pwned somehow
+if busybox [ ! -d /data/cron ]; then
+	busybox mkdir -p /data/cron
+fi
+if busybox [ ! -f /data/cron/root ]; then
+	cat > /data/cron/root << EOF
+# Prime Directive, Nuclearmistake, Sonicxml
+
+# Drop vm caches every 8 hours
+0 20 * * * sync; echo 3 > /proc/sys/vm/drop_caches
+
+# Clear cache every six hours
+0 0/6 * * * sync; cache -rmdata
+
+EOF
+fi
+
+busybox crond -c /data/cron

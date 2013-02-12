@@ -24,9 +24,7 @@ PRODUCT_PACKAGES := \
     Torch \
     Stk \
     LockClock \
-    Email2 \
-    NotificationWidget
-
+    Email2
 # Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapers \

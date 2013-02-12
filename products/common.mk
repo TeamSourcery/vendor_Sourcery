@@ -25,6 +25,7 @@ PRODUCT_PACKAGES := \
     Stk \
     LockClock \
     Email2
+
 # Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapers \

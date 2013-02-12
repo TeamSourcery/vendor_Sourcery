@@ -5,6 +5,8 @@ PRODUCT_DEVICE := generic
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/dictionaries
 
+# Version information
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40G BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=icsourcery
@@ -22,7 +24,8 @@ PRODUCT_PACKAGES := \
     Torch \
     Stk \
     LockClock \
-    Email2
+    Email2 \
+    NotificationWidget
 
 # Wallpapers
 PRODUCT_PACKAGES += \
@@ -75,8 +78,9 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk
-    
+    vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk \
+    vendor/Sourcery/prebuilt/common/app/NotificationWidget.apk:system/app/NotificationWidget.apk
+  
 # Sounds and bootani
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg \
@@ -172,9 +176,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=4.5 \
+    ro.build.sourcery.version=4.5.5 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=450 \
+    ro.goo.version=455 \
     ro.goo.rom=JBSourcery
 
 

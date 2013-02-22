@@ -51,12 +51,12 @@ PRODUCT_PACKAGES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/Sourcery/prebuilt/common/etc/init.d/01sourcery:system/etc/init.d/01sourcery \
-    vendor/Sourcery/prebuilt/common/etc/init.d/02sourcerytwo:system/etc/init.d/02sourcerytwo \
-    vendor/Sourcery/prebuilt/common/etc/init.d/03sourcerythree:system/etc/init.d/03sourcerythree \
-    vendor/Sourcery/prebuilt/common/etc/init.d/04sourceryfour:system/etc/init.d/04sourceryfour \
-    vendor/Sourcery/prebuilt/common/etc/init.d/05sourceryfive:system/etc/init.d/05sourceryfive \
+    vendor/Sourcery/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/Sourcery/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/Sourcery/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/Sourcery/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/Sourcery/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/Sourcery/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
     vendor/Sourcery/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
     vendor/Sourcery/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
     vendor/Sourcery/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
@@ -175,9 +175,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=4.5.5 \
+    ro.build.sourcery.version=4.6 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=455 \
+    ro.goo.version=460 \
     ro.goo.rom=JBSourcery
 
 

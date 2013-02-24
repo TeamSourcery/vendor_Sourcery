@@ -24,6 +24,7 @@ PRODUCT_PACKAGES := \
     Torch \
     Stk \
     LockClock \
+    DashClock \
     Email2
 
 # Wallpapers
@@ -78,7 +79,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk \
-    vendor/Sourcery/prebuilt/common/app/NotificationWidget.apk:system/app/NotificationWidget.apk
+    vendor/Sourcery/prebuilt/common/app/NotificationsWidget.apk:system/app/NotificationsWidget.apk \
+    vendor/Sourcery/prebuilt/common/app/SuperSUNoNag.apk:system/app/SuperSUNoNag.apk
   
 # Sounds and bootani
 PRODUCT_COPY_FILES += \
@@ -175,9 +177,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=4.6 \
+    ro.build.sourcery.version=4.8 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=460 \
+    ro.goo.version=480 \
     ro.goo.rom=JBSourcery
 
 

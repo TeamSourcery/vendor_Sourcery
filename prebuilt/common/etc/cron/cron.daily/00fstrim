@@ -1,0 +1,3 @@
+fstrim /system
+fstrim /data
+fstrim /cache

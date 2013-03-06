@@ -21,6 +21,7 @@ PRODUCT_PACKAGES := \
     SpareParts \
     MagicControl \
     MusicFX \
+    Music \
     Torch \
     Stk \
     LockClock \
@@ -47,8 +48,8 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     LatinImeGoogle \
-    audio_effects.conf \
-    Apollo
+    audio_effects.conf
+    
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -104,6 +105,7 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
     vendor/Sourcery/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
     vendor/Sourcery/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/Sourcery/prebuilt/common/etc/cron/cron.daily/00fstrim:system/etc/cron/cron.daily/00fstrim \
     vendor/Sourcery/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
     vendor/Sourcery/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
     vendor/Sourcery/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
@@ -177,9 +179,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=5.0 \
+    ro.build.sourcery.version=5.1 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=500 \
+    ro.goo.version=510 \
     ro.goo.rom=JBSourcery
 
 

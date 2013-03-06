@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/toro/full_toro.mk)
+ $(call inherit-product, device/samsung/toro/full_toro.mk)
 $(call inherit-product, vendor/Sourcery/products/common.mk)
 $(call inherit-product, vendor/Sourcery/products/common_phone.mk)
 $(call inherit-product, vendor/Sourcery/products/theme.mk)
@@ -36,18 +36,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-5.0
+    ro.modversion=JBSourcery-5.1
 
 
-
-
-PRODUCT_COPY_FILES += \
-    vendor/samsung/toro/proprietary/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
-    vendor/samsung/toro/proprietary/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
-    vendor/samsung/toro/proprietary/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
-    vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \
-    vendor/Sourcery/prebuilt/tuna/vold.fstab:system/etc/vold.fstab 
-    
     
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/toro
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common

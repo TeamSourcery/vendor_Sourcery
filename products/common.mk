@@ -25,8 +25,8 @@ PRODUCT_PACKAGES := \
     Torch \
     Stk \
     LockClock \
-    DashClock \
-    Email2
+    Email2 
+    
 
 # Wallpapers
 PRODUCT_PACKAGES += \
@@ -81,6 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk \
     vendor/Sourcery/prebuilt/common/app/NotificationsWidget.apk:system/app/NotificationsWidget.apk \
+    vendor/Sourcery/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk \
     vendor/Sourcery/prebuilt/common/app/DashClockSourceryToolboxExtension.apk:system/app/DashClockSourceryToolboxExtension.apk \
     vendor/Sourcery/prebuilt/common/app/SuperSUNoNag.apk:system/app/SuperSUNoNag.apk
   
@@ -174,8 +175,21 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
+    dalvik.vm.checkjni=false \
+    dalvik.vm.dexopt-flags=m=y \
+    dalvik.vm.execution-mode=int:jit \
+    dalvik.vm.stack-trace-file=/data/anr/traces.txt \
+    dalvik.vm.verify-bytecode=false \
+    ro.ext4fs=1 \
+    ro.HOME_APP_ADJ=1 \
     ro.kernel.android.checkjni=0 \
-    windowsmgr.max_events_per_sec=240 \
+    ro.kernel.checkjni=0 \
+    ro.media.enc.jpeg.quality=100 \
+    ro.media.dec.jpeg.memcap=8000000 \
+    ro.media.enc.hprof.vid.bps=8000000 \
+    ro.media.enc.hprof.vid.fps=65 \
+    ro.media.enc.jpeg.quality=100 \
+    windowsmgr.max_events_per_sec=115 \
     wifi.supplicant_scan_interval=180 \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
@@ -183,7 +197,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.sourcery.version=5.2 \
     ro.com.android.dataroaming=false \
     ro.goo.version=520 \
-    ro.goo.rom=JBSourcery
+    ro.goo.rom=JBSourcery \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.composition.type=gpu
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.performance.tuning=1
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.hw=1
 
 
 # tools

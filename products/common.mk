@@ -81,6 +81,7 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk \
     vendor/Sourcery/prebuilt/common/app/NotificationsWidget.apk:system/app/NotificationsWidget.apk \
+    vendor/Sourcery/prebuilt/common/app/DashClockSourceryToolboxExtension.apk:system/app/DashClockSourceryToolboxExtension.apk \
     vendor/Sourcery/prebuilt/common/app/SuperSUNoNag.apk:system/app/SuperSUNoNag.apk
   
 # Sounds and bootani
@@ -179,9 +180,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=5.1 \
+    ro.build.sourcery.version=5.2 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=510 \
+    ro.goo.version=520 \
     ro.goo.rom=JBSourcery
 
 

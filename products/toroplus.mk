@@ -32,7 +32,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-5.1
+    ro.modversion=JBSourcery-5.2
 
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \

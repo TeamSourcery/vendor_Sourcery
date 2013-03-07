@@ -90,6 +90,7 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg \
     vendor/Sourcery/prebuilt/common/media/audio/ringtones/freebird.ogg:system/media/audio/ringtones/freebird.ogg \
     vendor/Sourcery/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip
+
 # libs
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/lib/libmotricity.so:system/lib/libmotricity.so \
@@ -194,9 +195,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=5.2 \
+    ro.build.sourcery.version=5.1 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=520 \
+    ro.goo.version=510 \
     ro.goo.rom=JBSourcery \
 
 PRODUCT_PROPERTY_OVERRIDES += \

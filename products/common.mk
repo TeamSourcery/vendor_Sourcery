@@ -130,15 +130,15 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/terminfo/u/unknown:system/etc/terminfo/u/unknown
 
 # Adding files needed for extra camera features
-PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/Sourcery/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/Sourcery/prebuilt/common/media/video/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
+#PRODUCT_COPY_FILES += \
+    #vendor/Sourcery/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    #vendor/Sourcery/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    #vendor/Sourcery/prebuilt/common/media/video/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \
+    #vendor/Sourcery/prebuilt/common/media/video/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \
+    #vendor/Sourcery/prebuilt/common/media/video/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \
+    #vendor/Sourcery/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
+    #vendor/Sourcery/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
+    #vendor/Sourcery/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
     
 # Added xbin files
 PRODUCT_COPY_FILES += \

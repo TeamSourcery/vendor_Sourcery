@@ -25,6 +25,8 @@ PRODUCT_PACKAGES := \
     Torch \
     Stk \
     LockClock \
+    GNexusParts \
+    PerformanceControl \
     Email2 
     
 
@@ -53,19 +55,8 @@ PRODUCT_PACKAGES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
-    vendor/Sourcery/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
-    vendor/Sourcery/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
-    vendor/Sourcery/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
-    vendor/Sourcery/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
-    vendor/Sourcery/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
-    vendor/Sourcery/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
-    vendor/Sourcery/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/Sourcery/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/Sourcery/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/Sourcery/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
     vendor/Sourcery/prebuilt/common/etc/.root_browser:system/etc/.root_browser \
-    vendor/Sourcery/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/Sourcery/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/Sourcery/prebuilt/common/bin/zipalign:system/bin/zipalign \
     vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf
@@ -79,10 +70,10 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SlideShowWidget.apk:system/app/SlideShowWidget.apk \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/Sourcery/prebuilt/common/app/TricksterMOD.apk:system/app/TricksterMOD.apk \
-    vendor/Sourcery/prebuilt/common/app/NotificationsWidget.apk:system/app/NotificationsWidget.apk \
     vendor/Sourcery/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk \
+    vendor/Sourcery/prebuilt/common/app/DashClockJB15613ColorToolExtension.apk:system/app/DashClockJB15613ColorToolExtension.apk \
     vendor/Sourcery/prebuilt/common/app/DashClockSourceryToolboxExtension.apk:system/app/DashClockSourceryToolboxExtension.apk \
+    vendor/Sourcery/prebuilt/common/app/BeanPicker_Color_Tool.apk:system/app/BeanPicker_Color_Tool.apk \
     vendor/Sourcery/prebuilt/common/app/SuperSUNoNag.apk:system/app/SuperSUNoNag.apk
   
 # Sounds and bootani
@@ -103,16 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/Sourcery/prebuilt/common/etc/hosts:system/etc/hosts
 
-# Cron schedual 
-PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.daily/00fstrim:system/etc/cron/cron.daily/00fstrim \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-    vendor/Sourcery/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
@@ -132,13 +113,8 @@ PRODUCT_COPY_FILES += \
 # Adding files needed for extra camera features
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/Sourcery/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/Sourcery/prebuilt/common/media/video/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
-    vendor/Sourcery/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
+    vendor/Sourcery/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+   
     
 # Added xbin files
 PRODUCT_COPY_FILES += \
@@ -195,9 +171,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=5.1 \
+    ro.build.sourcery.version=5.1.9 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=510 \
+    ro.goo.version=519 \
     ro.goo.rom=JBSourcery \
 
 PRODUCT_PROPERTY_OVERRIDES += \

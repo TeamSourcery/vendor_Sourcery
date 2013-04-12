@@ -12,14 +12,14 @@ PRODUCT_MANUFACTURER := samsung
 
 #Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_NUMBER=125147 \
+    BUILD_NUMBER=573038 \
     BUILD_ID=ICL53F \
     PRODUCT_NAME=mysid \
     BUILD_DISPLAY_ID=JDQ39-4.2.2_r1 \
     BUILD_VERSION_TAGS=release-keys \
     USER=android-build \
-    PRIVATE_BUILD_DESC="mysid-user 4.2.2 JDQ39 125147 release-keys" \
-    BUILD_FINGERPRINT="google/mysid/toro:4.2.2/JDQ39/125147:user/release-keys"
+    PRIVATE_BUILD_DESC="mysid-user 4.2.2 JDQ39 573038 release-keys" \
+    BUILD_FINGERPRINT="google/mysid/toro:4.2.2/JDQ39/573038:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \
@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-5.1(Release)
+    ro.modversion=JBSourcery-5.1.9
 
 
     

@@ -71,8 +71,8 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/SourceryTools.apk:system/app/SourceryTools.apk \
     vendor/Sourcery/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/Sourcery/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk \
-    vendor/Sourcery/prebuilt/common/app/DashClockJB15613ColorToolExtension.apk:system/app/DashClockJB15613ColorToolExtension.apk \
-    vendor/Sourcery/prebuilt/common/app/DashClockSourceryToolboxExtension.apk:system/app/DashClockSourceryToolboxExtension.apk \
+    vendor/Sourcery/prebuilt/common/app/BP_Dashclock_Extension.apk:system/app/BP_Dashclock_Extension.apk \
+    vendor/Sourcery/prebuilt/common/app/Sourcery_Toolbox_Dashclock_Extension.apk:system/app/Sourcery_Toolbox_Dashclock_Extension.apk \
     vendor/Sourcery/prebuilt/common/app/BeanPicker_Color_Tool.apk:system/app/BeanPicker_Color_Tool.apk \
     vendor/Sourcery/prebuilt/common/app/SuperSUNoNag.apk:system/app/SuperSUNoNag.apk
   
@@ -171,9 +171,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=5.1.9 \
+    ro.build.sourcery.version=5.2 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=519 \
+    ro.goo.version=520 \
     ro.goo.rom=JBSourcery \
 
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -4,6 +4,10 @@ $(call inherit-product, vendor/Sourcery/products/common.mk)
 $(call inherit-product, vendor/Sourcery/products/common_phone.mk)
 $(call inherit-product, vendor/Sourcery/products/theme.mk)
 
+# Inherit cdma common stuff
+$(call inherit-product, vendor/Sourcery/products/cdma.mk)
+
+
 # Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/toroplus
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common
@@ -32,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-5.2
+    ro.modversion=JBSourcery-5.1.9.3
 
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/etc/gps.conf:system/etc/gps.conf \

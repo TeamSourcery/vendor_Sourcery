@@ -4,6 +4,9 @@ $(call inherit-product, vendor/Sourcery/products/common_phone.mk)
 $(call inherit-product, vendor/Sourcery/products/theme.mk)
 $(call inherit-product, vendor/Sourcery/products/vzw.mk)
 
+# Inherit cdma common stuff
+$(call inherit-product, vendor/Sourcery/products/cdma.mk)
+
 PRODUCT_NAME := Sourcery_toro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := toro
@@ -36,7 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-5.2
+    ro.modversion=JBSourcery-5.1.9.3
 
 
     

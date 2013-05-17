@@ -6,7 +6,7 @@ PRODUCT_DEVICE := generic
 PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/dictionaries
 
 # Version information
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JDQ39-4.2.2_r1 BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JDQ39E-4.2.2_r1.2 BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=icsourcery
@@ -21,13 +21,13 @@ PRODUCT_PACKAGES := \
     SpareParts \
     MagicControl \
     MusicFX \
-    Music \
+    Apollo \
     Torch \
     Stk \
     LockClock \
     GNexusParts \
     PerformanceControl \
-    Email2 
+    PermissionsManager
     
 
 # Wallpapers
@@ -73,7 +73,6 @@ PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk \
     vendor/Sourcery/prebuilt/common/app/BP_Dashclock_Extension.apk:system/app/BP_Dashclock_Extension.apk \
     vendor/Sourcery/prebuilt/common/app/Sourcery_Toolbox_Dashclock_Extension.apk:system/app/Sourcery_Toolbox_Dashclock_Extension.apk \
-    vendor/Sourcery/prebuilt/common/app/BeanPicker_Color_Tool.apk:system/app/BeanPicker_Color_Tool.apk \
     vendor/Sourcery/prebuilt/common/app/SuperSUNoNag.apk:system/app/SuperSUNoNag.apk
   
 # Sounds and bootani
@@ -171,9 +170,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=5.2 \
+    ro.build.sourcery.version=5.2.7 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=520 \
+    ro.goo.version=527 \
     ro.goo.rom=JBSourcery \
 
 PRODUCT_PROPERTY_OVERRIDES += \

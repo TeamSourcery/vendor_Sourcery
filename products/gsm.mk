@@ -9,7 +9,8 @@ PRODUCT_COPY_FILES += \
 
 # SIM Toolkit
 PRODUCT_PACKAGES += \
-     Stk
+     Stk \
+     CellBroadcastReceiver
 
 PRODUCT_PROPERTY_OVERRIDES += \
     gsm.current.phone-type=1

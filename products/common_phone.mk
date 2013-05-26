@@ -11,4 +11,4 @@ PRODUCT_PACKAGES += \
     system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    fw.max_users=2
+    fw.max_users=1

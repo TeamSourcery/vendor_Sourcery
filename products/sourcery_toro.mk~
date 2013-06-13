@@ -1,30 +1,28 @@
-# Inherit AOSP device configuration for maguro.
-$(call inherit-product, device/samsung/maguro/full_maguro.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/Sourcery/products/common_phone.mk)
+ $(call inherit-product, device/samsung/toro/full_toro.mk)
 $(call inherit-product, vendor/Sourcery/products/common.mk)
-# Inherit GSM common stuff
-$(call inherit-product, vendor/Sourcery/products/gsm.mk)
-# tmobile theme engine
+$(call inherit-product, vendor/Sourcery/products/common_phone.mk)
 $(call inherit-product, vendor/Sourcery/products/theme.mk)
+$(call inherit-product, vendor/Sourcery/products/vzw.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/maguro
-PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common
+# Inherit cdma common stuff
+$(call inherit-product, vendor/Sourcery/products/cdma.mk)
 
-
-# Setup device specific product configuration.
-PRODUCT_NAME := Sourcery_maguro
+PRODUCT_NAME := Sourcery_toro
 PRODUCT_BRAND := google
-PRODUCT_DEVICE := maguro
+PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_FINGERPRINT="google/yakju/maguro:4.2.2/JDQ39/573038:user/release-keys"
-PRIVATE_BUILD_DESC="yakju-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
-
-PRODUCT_COPY_FILES += \
-    vendor/Sourcery/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_NUMBER=573038 \
+    BUILD_ID=ICL53F \
+    PRODUCT_NAME=mysid \
+    BUILD_DISPLAY_ID=JDQ39E-4.2.2_r1.2 \
+    BUILD_VERSION_TAGS=release-keys \
+    USER=android-build \
+    PRIVATE_BUILD_DESC="mysid-user 4.2.2 JDQ39 573038 release-keys" \
+    BUILD_FINGERPRINT="google/mysid/toro:4.2.2/JDQ39/573038:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-verizon \
@@ -41,5 +39,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.lockprof.threshold=500 \
     wifi.supplicant_scan_interval=180 \
     ro.goo.developerid=TeamSourcery \
-    ro.modversion=JBSourcery-6.0--NOTSUPPORTED
+    ro.modversion=JBSourcery-5.3-Unofficial
+
+
+    
+PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/toro
+PRODUCT_PACKAGE_OVERLAYS += vendor/Sourcery/overlay/common
 

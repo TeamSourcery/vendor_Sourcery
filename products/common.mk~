@@ -84,7 +84,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Sourcery/prebuilt/common/media/audio/notifications/Sourcery.ogg:system/media/audio/notifications/Sourcery.ogg \
     vendor/Sourcery/prebuilt/common/media/audio/ringtones/freebird.ogg:system/media/audio/ringtones/freebird.ogg \
-    vendor/Sourcery/prebuilt/common/media/audio/ringtones/DSB.ogg:system/media/audio/ringtones/DSB.ogg \
     vendor/Sourcery/prebuilt/toro/bootanimation.zip:system/media/bootanimation.zip
 
 # libs
@@ -163,12 +162,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     ro.media.enc.jpeg.quality=100 \
     wifi.supplicant_scan_interval=180 \
-    ro.config.ringtone=DSB.ogg \
+    ro.config.ringtone=freebird.ogg \
     ro.config.notification_sound=Sourcery.ogg \
     ro.config.alarm_alert=Plutonium.ogg \
-    ro.build.sourcery.version=6.0 \
+    ro.build.sourcery.version=5.3 \
     ro.com.android.dataroaming=false \
-    ro.goo.version=600 \
+    ro.goo.version=530 \
     ro.goo.rom=JBSourcery
 
 # Enable ADB authentication
